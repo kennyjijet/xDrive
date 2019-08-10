@@ -1,0 +1,915 @@
+/*
+Theme Name: Carconsult Wordpress
+Author: designchemical
+Author URI: http://www.designchemical.com
+Version: 1.0
+Description: Custom WordPress theme for Carconsult
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	RESET
+/*-----------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+:focus {
+    outline: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.clearfix {
+    display: inline-block
+}
+
+* html .clearfix {
+    height: 1%
+}
+
+.clearfix {
+    display: block
+}
+
+th, td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clear, .push {
+    clear: both;
+}
+
+.both {
+    clear: both;
+}
+
+br {
+    line-height: 10px;
+}
+
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner {
+    border: 0px;
+}
+
+input[type="submit"]:focus, input[type="button"]:focus {
+    outline: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	GENERAL
+/*-----------------------------------------------------------------------------------*/
+
+body {
+    /* position: relative;*/
+    position: absolute;
+    background: #181818 url(../assets/images/bg.jpg) no-repeat;
+    color: #fff;
+    width: 500px;
+    height: 600px;
+    font-family: test;
+    font-size: 14px;
+
+}
+
+#wrap {
+
+    font-family: test;
+    height: 10px;
+    /*  height: 10px;
+    background-size: 100% auto;
+    */
+    /*   transform: scale(1.4,1.4);
+       -ms-transform: scale(1.4,1.4);
+       -webkit-transform: scale(1.4,1.4);
+       left: 150px;
+   */
+}
+
+#wrap_done {
+    position: absolute;
+    font-family: test;
+    font-size: 35px;
+    left: 250px;
+    width: 800px;
+    height: 200px;
+    top: 250px;
+}
+
+.wrap {
+    width: 620px;
+    /*margin: 0 auto;*/
+    clear: both;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#header {
+
+    padding: 0px 0 0;
+}
+
+#logo1 {
+
+    position: relative;
+    left: 590px;
+    bottom: 100px;
+    background: url(../assets/images/logo.png) no-repeat;
+    /*scale method*/
+
+    transform: scale(0.55, 0.55);
+    -ms-transform: scale(0.55, 0.55);
+    -webkit-transform: scale(0.55, 0.55);
+}
+
+#logo2 {
+    position: absolute;
+    left: 670px;
+    top: 50px;
+    /*background: url(../assets/images/logo.png) no-repeat ;*/
+    transform: scale(0.55, 0.55);
+    -ms-transform: scale(0.55, 0.55);
+    -webkit-transform: scale(0.55, 0.55);
+
+}
+
+#yes {
+    font-size: 20px;
+}
+
+#Book1_1, #Book1_2, #Book1_3, #Book1_4, #Book1_5, #Book1_6, #Book1_7, #Book1_8, #Book1_9, #Book1_10, #Book1_11, #Book1_12 {
+
+    font-family: test;
+    position: relative;
+    left: 210px;
+    top: 80px;
+    color: #e2e2e2;
+    font-size: 50px;
+    /*  width: 100%;
+      height: 100%;
+      background-size: contain;*/
+    /*  background-size: 100% auto;*/
+    /* font-family:"HelveticaNeueLTCom-HvCn";*/
+}
+
+#arrow1 {
+    /*
+  position: fixed;*/
+    position: absolute;
+    left: -200px;
+    top: 50px;
+    /*  background: url(../assets/images/btn-back.png) no-repeat ;*/
+    transform: scale(0.55, 0.55);
+    -ms-transform: scale(0.55, 0.55);
+    -webkit-transform: scale(0.55, 0.55);
+}
+
+@font-face {
+    font-family: 'test';
+    src: url("HelveticaNeueLTCom-HvCnO.ttf") format('truetype');
+
+}
+
+#suggest {
+
+    position: fixed;
+    left: 150px;
+    top: 180px;
+}
+
+#Book_1, #Book_2, #Book_3, #Book_4, #Book_5, #Book_6, #Book_7, #Book_8, #Book_9, #Book_10, #Book_11, #Book_12 {
+
+    font-family: test;
+    position: relative;
+    left: 250px;
+    top: 75px;
+    width: 700px;
+    color: #e2e2e2;
+    font-size: 50px;
+    /*  width: 100%;
+      height: 100%;
+      background-size: contain;*/
+    /*  background-size: 100% auto;*/
+    /* font-family:"HelveticaNeueLTCom-HvCn";*/
+}
+
+#loading_popup {
+
+    /*    position: absolute;
+        z-index: 1000;
+        cursor: wait;
+
+    */
+}
+
+#bg_black {
+    position: absolute;
+    z-index: 1;
+    background: black;
+    width: 100%;
+    height: 100%;
+
+}
+
+#arrow {
+    position: relative;
+    left: -200px;
+    top: -10px;
+    /*  background: url(../assets/images/btn-back.png) no-repeat ;*/
+
+    transform: scale(0.55, 0.55);
+    -ms-transform: scale(0.55, 0.55);
+    -webkit-transform: scale(0.55, 0.55);
+}
+
+h1 {
+
+    font-size: 20px;
+    /*padding-top: 59px;*/
+    text-decoration: underline;
+
+}
+
+h2 {
+    /*font-size: 10px;
+    color: #D43E1B;
+    text-transform: uppercase;
+    position: absolute;
+    left: -115px;
+    text-align: right;
+    width: 60px;*/
+    font-family: test;
+    padding-top: 10px;
+    font-size: 30px;
+    /*color: #000000;*/
+    color: #ffffff;
+
+}
+
+h3 {
+    font-size: 20px;
+    /*color: #D43E1B;*/
+    color: #ffffff;
+
+    /*	position: absolute;
+        bottom: 10px;
+        left: -115px;
+        text-align: right;
+        width: 100px;*/
+}
+
+h4 {
+    font-size: 20px;
+    color: red;
+}
+
+h5 {
+    font-size: 20px;
+    color: gray;
+
+    padding-top: 59px;
+    text-align: center;
+
+}
+
+h6 {
+
+    font-size: 20px;
+    color: gray;
+}
+
+#logo {
+    float: right;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	FORMS
+/*-----------------------------------------------------------------------------------*/
+
+.form-container {
+    position: relative;
+    /*background: url(../assets/images/line.png) no-repeat 55px 45px;*/
+    padding-bottom: 100px;
+
+    top: -150px;
+
+}
+
+.form-container .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.form-container .loading span {
+}
+
+.form-container .response {
+    display: none;
+    margin: 15px 100px;
+    clear: both;
+    text-shadow: none;
+    padding: 15px 15px 13px 15px;
+    line-height: 17px;
+}
+
+.form-container .forms {
+    width: 420px;
+    margin: 0 auto;
+}
+
+.forms fieldset {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.forms fieldset#end {
+    padding-top: 15px;
+    left: 200px;
+    top: -100px;
+}
+
+#name h2 {
+    top: 56px;
+}
+
+#address {
+
+}
+
+#address h2 {
+    top: 78px;
+}
+
+#contact h2 {
+    top: 36px;
+}
+
+#car h2 {
+    top: 57px;
+}
+
+#dealer h2 {
+    top: 14px;
+
+}
+
+#dealer {
+
+    width: 100px;
+    left: 470px;
+    top: -345px;
+    font-family: test;
+
+}
+
+.forms il.defaultText {
+
+    color: white;
+
+}
+
+.forms ol {
+    list-style: none;
+}
+
+.forms ol br {
+    display: none;
+}
+
+/* form rows */
+.forms li.form-row {
+    margin-bottom: 0;
+}
+
+.forms li.text-input-row {
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.forms li.text-area-row {
+}
+
+.forms li.checkbox-row {
+}
+
+.forms li.checkbox2-row {
+}
+
+.forms li.radio-row {
+}
+
+.forms li.select-row {
+}
+
+.forms li.button-row {
+
+}
+
+#end {
+    position: relative;
+}
+
+.image-swap {
+    position: absolute;
+    right: -3px;
+    top: 12px;
+}
+
+.forms li.hidden-row {
+    display: none;
+}
+
+/* form input fields */
+
+.forms fieldset .text-input {
+    font-family: test;
+    width: 399px;
+    height: 39px;
+    padding: 0 10px;
+    font-size: 20px;
+    display: inline;
+    background: url(../assets/images/bg-text.png) repeat;
+    color: #FFFFFF;
+
+}
+
+.forms fieldset .text-input {
+    border-right: 1px solid #464646;
+    border-left: 1px solid #464646;
+    border-top: none;
+    border-bottom: 1px solid #393939;
+}
+
+.forms fieldset .text-input.first {
+    /*
+        border-top:1px solid #464646;
+        -webkit-border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;*/
+}
+
+.forms fieldset .text-input.last {
+    /*
+	border-bottom:1px solid #464646;
+	border-top: none;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;*/
+}
+
+.forms fieldset .select {
+    width: 421px;
+    /*height: 39px;*/
+    padding: 10px;
+    font-size: 13px;
+    display: inline;
+    /*background: url(../assets/images/bg_text.png) repeat;*/
+    color: #fff;
+}
+
+.forms fieldset .text-input.single, .forms fieldset .select {
+    border: 1px solid #464646;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 0px;
+}
+
+.forms fieldset .password {
+}
+
+.forms fieldset .text-area {
+    width: 399px;
+    height: 140px;
+    resize: none;
+    font-family: 'PTSansRegular';
+    font-size: 13px;
+    padding: 5px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.forms fieldset .radio {
+}
+
+.forms fieldset .checkbox {
+}
+
+.forms fieldset .btn-submit {
+
+    border: none;
+    height: 27px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #e2e2e2;
+    font-size: 14px;
+    padding: 0 20px 1px 20px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+#button {
+    width: 250px;
+    height: 53px;
+    left: 50px;
+    color: #000000;
+    top: 30px;
+    text-align: left;
+    background: url(../assets/images/btn-submit.png) 0 0 no-repeat;
+    background-position: center;
+    background-size: 241px 53px;
+
+}
+
+#button1 {
+    height: 53px;
+    left: 600px;
+    color: #ffffff;
+    top: 0px;
+    text-align: left;
+    background: url(../assets/images/btn-submit.png) 0 0 no-repeat;
+    background-position: center;
+    background-size: 241px 53px;
+    position: relative;
+    top: 200px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+    .forms fieldset .btn-submit {
+        padding: 0 20px 2px 20px;
+    }
+
+}
+
+.forms span.error {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: test;
+}
+
+.forms .select-row span.error {
+    font-size: 20px;
+    font-family: test;
+    right: 35px;
+}
+
+.forms .button-row span.error {
+    font-size: 20px;
+    font-family: test;
+    padding: 0;
+    display: none;
+}
+
+.forms li.focus span.error {
+    font-size: 20px;
+    font-family: test;
+    display: none;
+}
+
+.forms label {
+    display: block;
+    float: left;
+    width: 80px;
+    padding-top: 5px;
+    font-family: 'PTSansRegular';
+    font-size: 13px;
+}
+
+#Brochures {
+    background: url(../assets/images/bg_text.png) repeat;
+    border: 1px solid #464646;
+    width: 400px;
+    padding: 15px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#border_Brochures {
+    height: 350px;
+    width: 1320px;
+    left: 0px;
+    bottom: 0px;
+    background: url(../assets/images/bg-text.png) repeat;
+
+}
+
+/*
+#Hilight  {
+	background: url(../assets/images/bg_validate.png) 0;
+    width: 40px;
+}*/
+/*
+img { position:absolute; top: 25px; z-index: 2;}
+.imgA1 { left: 0px; }
+.imgB1 { left: 0px; }
+
+.imgA2 { left: 0px; }
+.imgB2 { left: 0px; }
+*/
+#Hilight {
+    position: relative;
+    font-family: test;
+    color: white;
+    font-size: 60px;
+    width: 1500px;
+    left: -150px;
+    top: -110px;
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5); /* IE 9 */
+    -webkit-transform: scale(0.5, 0.5); /* Safari and Chrome */
+}
+
+#content_title {
+
+    width: 1500px;
+    height: 0px;
+    font-family: test;
+    color: #e2e2e2;
+    font-size: 60px;
+    position: relative;
+    left: 150px;
+
+}
+
+#car_error {
+    position: absolute;
+    top: 82px;
+    width: 550px;
+    height: 100px;
+
+}
+
+#tick_error {
+    position: absolute;
+    top: -5px;
+    left: -18px;
+    width: 30px;
+    height: 30px;
+
+}
+
+#romania_error {
+    position: absolute;
+    top: 108px;
+    left: 80px;
+    width: 200px;
+    height: 30px;
+    /* background-color:#743829;
+ */
+}
+
+#car {
+    width: 550px;
+    height: 220px;
+    left: 450px;
+    top: -320px;
+    font-size: 20px;
+
+}
+
+#car p {
+
+    margin-bottom: 15px;
+}
+
+#list-cars li {
+    /*width: 130px;*/
+
+    font-size: 30px;
+    /* background: url(../assets/images/bg_error.png) repeat;*/
+    margin: 0 3px;
+    width: 130px;
+    float: left;
+    text-align: center;
+    transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3); /* IE 9 */
+    -webkit-transform: scale(1.3, 1.3); /* Safari and Chrome */
+
+}
+
+#list-cars li a {
+    display: block;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+#list-cars li a:hover, #list-cars li a.active {
+    /*	background: darkcyan;*/
+    width: 100px;
+    background: url(../assets/images/btn-selected.png) 0 0 no-repeat;
+    background-position: center;
+    background-size: 100px 80px;
+    /*
+    transform: skew(-0.5deg,1deg);
+-ms-transform: skew(-0.5deg,1deg);
+-webkit-transform: skew(-0.5deg,1deg); */
+    font-size: 20px;
+
+}
+
+#Brochures_Location {
+    /* Waste space Down here , Problem from postion relative
+    Solve it by change it
+    */
+
+    font-family: test;
+    position: absolute;
+    width: 1200px;
+    font-size: 20px;
+    /*  height: auto;*/
+    left: -60px;
+
+    bottom: 175px;
+
+    transform: scale(0.8, 0.6);
+    -ms-transform: scale(0.8, 0.6);
+    -webkit-transform: scale(0.8, 0.6);
+
+}
+
+/*
+#Iam1 p, #Iam2 p, #Iam3 p,#Iam4 p,#Iam5 p,#Iam6 p,#Iam7 p,#Iam8 p,#Iam9 p,#Iam10 p,#Iam11 p,{
+
+font-size: 20px;
+   color: white;
+
+}*/
+
+#list-bro li, #list-bro1 li {
+    width: 250px;
+    float: left;
+    text-align: start;
+
+    padding-left: 10px;
+    color: #000000;
+
+    /* background: url(../assets/images/btn-submit.png) no-repeat 0 bottom ;
+         /*padding: 15px 10px;*/
+
+}
+
+#Brochures_description {
+    position: relative;
+    width: 200px;
+
+    left: 920px;
+    top: -340px;
+    text-align: left;
+    float: left;
+    text-align: start;
+    font-size: 15px;
+    color: grey;
+
+}
+
+.checkbox-row p {
+    color: #686868;
+    font-size: 15px;
+    width: 250px;
+
+}
+
+.checkbox-row a {
+    display: block;
+    padding: 6px 0 6px 35px;
+    width: 300px;
+    background: url(../assets/images/btn-tick.png) no-repeat 0 center;
+    font-size: 20px;
+    background-position: 0px 0px, center;
+    color: #fff;
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+}
+
+.checkbox-row a.active {
+    background: url(../assets/images/check_on.png) no-repeat 0 center;
+    background-position: 0px 0px, center;
+}
+
+.checkbox2-row p {
+    color: #686868;
+    font-size: 8px;
+    width: 280px;
+
+}
+
+.checkbox2-row a {
+    display: block;
+    padding: 6px 0 6px 35px;
+    background: url(../assets/images/check_off.png) no-repeat 0 center;
+    font-size: 11px;
+    color: #fff;
+}
+
+.checkbox2-row a.active {
+    background: url(../assets/images/check_on.png) no-repeat 0 center;
+}
+
+.form-container .response {
+    background: #77a984;
+    border: 1px solid #86bf9d;
+    color: #2e4534;
+}
+
+.forms fieldset .text-area, .forms fieldset .select {
+    background-color: #3f3f3f;
+    /*color: #686868;*/
+    font-family: test;
+    font-size: 20px;
+
+}
+
+.forms li.error input, .forms li.error textarea, .forms li.error .select, #toptitle {
+    font-size: 20px;
+    font-family: test;
+    background: url(../assets/images/bg_validate.png) repeat;
+}
+
+.forms fieldset .btn-submit {
+    background-color: #4d87ab;
+    color: #000000;
+    text-shadow: none;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.forms fieldset .btn-submit:hover {
+    background-color: #ab4d63;
+}

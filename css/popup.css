@@ -1,0 +1,100 @@
+/*
+	author: istockphp.com
+*/
+#backgroundPopup {
+    z-index: 1;
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    top: 0px;
+    left: 0px;
+}
+
+#toPopup1, #toPopup2, #toPopup3, #toPopup4, #toPopup5, #toPopup6, #toPopup7, #toPopup8, #toPopup9, #toPopup10, #toPopup11 {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #ccc;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    display: none;
+    font-size: 14px;
+    margin-left: -402px;
+    position: absolute;
+    /*left: 45%;
+    position: fixed;
+    top: 20%;*/
+    left: 550px;
+    top: 100px;
+    width: 750px;
+    height: 400px;
+    z-index: 2;
+    overflow: scroll;
+
+}
+
+div.loader {
+    background: no-repeat scroll 0 0 transparent;
+    height: 32px;
+    width: 32px;
+    display: none;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    margin-left: -10px;
+}
+
+div.close {
+    background: no-repeat scroll 0 0 transparent;
+    bottom: 24px;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    left: 27px;
+    position: relative;
+    width: 30px;
+}
+
+span.ecs_tooltip {
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 11px;
+    height: 16px;
+    opacity: 0.7;
+    padding: 4px 3px 2px 5px;
+    position: absolute;
+    right: -62px;
+    text-align: center;
+    top: -51px;
+    width: 93px;
+}
+
+span.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #000000;
+    display: block;
+    height: 1px;
+    left: 40px;
+    position: relative;
+    top: 3px;
+    width: 1px;
+}
+
+div#popup_content {
+    margin: 4px 7px;
+
+}
+
+#toPopup1 a, #toPopup2 a, #toPopup3 a, #toPopup4 a, #toPopup5 a, #toPopup6 a, #toPopup7 a, #toPopup8 a, #toPopup9 a, #toPopup10 a, #toPopup11  a {
+    color: #000000;
+}
+
+/*#toPopup1 a:active , #toPopup1 a:active ,#toPopup1 a:active ,#toPopup1 a:active ,#toPopup1 a:active, #toPopup1 a:active #toPopup1 a:active{
+
+   color: red;
+}*/
